@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Samsung.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Samsung</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="img/Samsung.png" alt="Logo da Samsung" class="logo"></a>
+            <ul>
+                <li><a href="#">Smartwatch</a></li>
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#" class="check">Smatphone</a></li>
+                <li><a href="#">Galaxy Buds</a></li>
+                <li><a href="#">Samsung Book</a></li>
+                <li><a href="#">Só na Samsung</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="img/Creme.png" alt="Imagem Samsung">
+                <h3>Seu novo superpoder.</h3>
+                <p>Processador Snapdragon 8 Gen2 velocidade impressionante.</p>
+                <p>Novos recursos de foto e vídeo.</p>
+                <p></p>No Samsung S23 Ultra, você faz coisas que nunca pôde.</p>
+                <h6>A partir de R$ 5.599</h6>
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                   <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="violeta" onclick="imgSlider('img/Creme.png'); circleChange('#d88fd8')"></span>
+                    <span id="verde" onclick="imgSlider('img/Verde.png'); circleChange('#445c42')"></span>
+                    <span id="vinho" onclick="imgSlider('img/Vinho.png'); circleChange('#722F37')"></span>
+                    <span id="preto" onclick="imgSlider('img/Preto.png'); circleChange('#000000')"></span>
+                    <span id="branco" onclick="imgSlider('img/Branco.png'); circleChange('#FFFFFF')"></span>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="img/Creme.png" alt="Imagem do Samsung S23" id="phone">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        /*Função de mudar o celular*/
+        function imgSlider(e){
+            document.querySelector('#phone').src = e;
+        }
+        /*Função de mudar a cor do circulo*/
+        function circleChange(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
